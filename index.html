@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donald Eke</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Donald Eke</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Donald Eke</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/profile_pic.png" alt="Donald Eke profile picture">
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Donald Eke</h1>
+          <p class="section__text__p2">DevOps Engineer</p>
+          <div class="btn-container">
+            <button 
+              class="btn btn-color-2" 
+              onclick="window.open('./assets/resume.pdf')"
+            >
+            Download CV
+            </button>
+            <button 
+              class="btn btn-color-1" onclick="location.href='./#contact'"
+            >
+            Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img 
+              src="./assets/linkedin.png" 
+              alt="My LinkedIn profile"
+              class="icon" 
+              onclick="window.open('https://www.linkedin.com/in/donald-eke-154a60159')"
+            />
+            <img 
+              src="./assets/github.png" 
+              alt="My GitHub profile"
+              class="icon" 
+              onclick="window.open('https://github.com/ekedonald')"
+            />
+          </div>
+        </div>
+      </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>2 years<br />DevOps</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Sc (Hons) Electrical & Electronics Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>I specialize in designing and managing high-availability, scalable systems to optimize costs and efficiency. My expertise spans container orchestration and management, infrastructure provisioning, deployment, configuration management, monitoring and observability across environments. I excel at communicating complex technical ideas to various stakeholders, implementing solutions that improve processes and user experience, thereby enhancing operational efficiency and client satisfaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="title">Skills</h2>
+        <div class="experience-content">
+            <h3>Technology Stack</h3>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <img src="./assets/kuberentes.png" alt="Kubernetes" class="tech-icon">
+                    <span>Kubernetes</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/docker.png" alt="Docker" class="tech-icon">
+                    <span>Docker</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/terraform.png" alt="Terraform" class="tech-icon">
+                    <span>Terraform</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/ansible.png" alt="Ansible" class="tech-icon">
+                    <span>Ansible</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/githubactions.png" alt="GitHub Actions" class="tech-icon">
+                    <span>GitHub Actions</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/gitlab.png" alt="Gitlab" class="tech-icon">
+                    <span>Gitlab</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/jenkins.png" alt="Jenkins" class="tech-icon">
+                    <span>Jenkins</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/argocd.png" alt="ArgoCD" class="tech-icon">
+                    <span>ArgoCD</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/prometheus.png" alt="Prometheus" class="tech-icon">
+                    <span>Prometheus</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/grafana.png" alt="Grafana" class="tech-icon">
+                    <span>Grafana</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/loki.png" alt="Loki" class="tech-icon">
+                    <span>Loki</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/aws.png" alt="AWS" class="tech-icon">
+                    <span>AWS</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/git.png" alt="Git" class="tech-icon">
+                    <span>Git</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/linux.png" alt="Linux" class="tech-icon">
+                    <span>Linux</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/go.png" alt="Go" class="tech-icon">
+                    <span>Go</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/bash.png" alt="BASH" class="tech-icon">
+                    <span>BASH</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/nginx.png" alt="NGINX" class="tech-icon">
+                    <span>NGINX</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/apache.png" alt="Apache" class="tech-icon">
+                    <span>Apache</span>
+                </div>
+                <div class="tech-item">
+                    <img src="./assets/redhat.png" alt="RedHat" class="tech-icon">
+                    <span>RedHat</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+          <div class="project-card">
+            <h3>Kubernetes Monitoring Stack Deployment</h3>
+            <p>Deployed Prometheus, Loki and Grafana for collecting metrics, log aggregation and visualization in a Kubernetes Cluster.</p>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ekedonald/DevOps-Projects/tree/main/20-Deploying%20Prometheus-Grafana-and-Loki-in%20a-Kubernetes-Cluster'">GitHub</button>
+          </div>
+          <div class="project-card">
+            <h3>Telex Application</h3>
+            <p>Telex is a real-time notification system that centralizes alerts from applications in a chat-like format. It focuses on events such as errors, performance issues and user activity.</p>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://telex.im'">Live</button>
+          </div>
+          <div class="project-card">
+            <h3>Dockerize a Frontend Application</h3>
+            <p>Used docker to dockerize a golang and nextjs Application.</p>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">GitHub</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="section-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-container">
+          <div class="contact-item">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+            <p><a href="mailto:eke.donalds@rocketmail.com">eke.donalds@rocketmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+            <p><a href="https://www.linkedin.com/in/donald-eke-154a60159" target="_blank">LinkedIn</a></p>
+              </div>
+            </div>
+        </div>
+
+      </section>
+
+      <footer>
+        <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Donald Eke. All rights reserved.</p>
+      </footer>
+      
+    <script src="script.js"></script>
+    
+</body>
+</html>

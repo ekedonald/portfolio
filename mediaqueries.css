@@ -1,0 +1,116 @@
+@media (max-width: 1024px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+    #skills, .experience-content {
+        margin-top: 2rem;
+    }
+    #profile, .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0.5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers {
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact {
+      height: auto;
+      padding: 2rem 0;
+    }
+  
+    .contact-info-container {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .contact-item {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+  
+    .contact-item p, .contact-item a {
+      font-size: 0.9rem;
+      word-break: break-all;
+    }
+
+    #profile {
+        height: auto;
+        padding: 4rem 0;
+        text-align: center;
+    }
+
+    .section__pic-container {
+        margin: 0 auto 2rem;
+    }
+
+    .section__text {
+        align-self: flex-start;
+    }
+
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .btn-container {
+        justify-content: center;
+    }
+
+    #socials-container {
+        justify-content: center;
+    }
+  }
+
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .icon.arrow {
+        right: 0.5rem;
+        bottom: 1rem;
+    }
+}
